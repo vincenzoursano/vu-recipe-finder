@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  background: var(--color-rice);
+  box-shadow: var(--shadow-sm);
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.content {
+  padding: var(--spacing-md);
+}
+
+h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: var(--text-lg);
+  color: var(--color-black-pepper);
+}
+
+p {
+  margin: 0;
+  color: var(--color-black-pepper);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  background: var(--color-turmeric);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: var(--text-md);
+  padding: var(--spacing-sm);
+  box-shadow: var(--shadow-sm);
+}
+
