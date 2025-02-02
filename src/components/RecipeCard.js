@@ -14,13 +14,15 @@ export class RecipeCard extends HTMLElement {
   connectedCallback() {
     this.render();
     this.shadowRoot.querySelector('.favorite-btn').addEventListener('click', this.toggleFavorite);
+    this.shadowRoot.querySelector('.card').addEventListener('click', this.handleClick);
   }
 
   getInnerFavoriteButton() {
     return this.getAttribute('favorite') === 'true' ? '❤️' : '🤍';
   }
 
-  toggleFavorite = () => {
+  toggleFavorite = (evt) => {
+    evt.stopPropagation();
     const isFavorite = this.getAttribute('favorite') === 'true';
     this.setAttribute('favorite', (!isFavorite).toString());
     this.shadowRoot.querySelector('.favorite-btn').innerHTML = this.getInnerFavoriteButton();
@@ -33,6 +35,12 @@ export class RecipeCard extends HTMLElement {
       composed: true
     });
     this.dispatchEvent(favoriteEvent);
+  }
+
+  handleClick = () => {
+    const recipeDetail = document.createElement('recipe-detail');
+    recipeDetail.setAttribute('recipe-id', this.getAttribute('recipe-id'));
+    document.getElementById('modals').appendChild(recipeDetail);
   }
 
   render() {

@@ -44,6 +44,7 @@
 
   /* Z-Index */
   --z-index-header: 99;
+  --z-index-modals-1: 999;
 }
 
 body {
@@ -157,3 +158,4 @@ body {
 .rainbow-filter:hover {
   animation-play-state: paused;
 }
+
