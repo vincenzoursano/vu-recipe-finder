@@ -1,0 +1,38 @@
+:host {
+  --input-max-width: 300px;
+  --input-border-size: 2px;
+}
+
+label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: var(--input-border-size) solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: var(--text-sm);
+  background-color: var(--color-rice);
+  max-width: var(--input-max-width);
+}
+
+input:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+input::placeholder {
+  color: var(--color-text-light);
+  opacity: 0.7;
+}
