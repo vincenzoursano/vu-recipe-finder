@@ -3,7 +3,7 @@ import "./components";
 import { recipesService } from "./services/RecipesService.js";
 import { EVENT_RECIPE_FILTER_FAVORITE_ONLY } from "./constants/event.js";
 
-await recipesService.initialize();
+recipesService.initialize().then(render);
 
 /**
  * @param {Recipe[]} recipes
@@ -38,16 +38,6 @@ function renderRecipesCards(recipes, filters) {
   return template;
 }
 
-render();
-const favoritesButton = document.querySelector("#favoritesButton");
-favoritesButton.addEventListener("click", () => {
-  const favoritesOnlyEvent = new CustomEvent(EVENT_RECIPE_FILTER_FAVORITE_ONLY, {
-    bubbles: true,
-    composed: true
-  });
-  document.dispatchEvent(favoritesOnlyEvent);
-});
-
 recipesService.subscribe(() => {
   const filters = recipesService.getFilters();
   const recipes = recipesService.getFilteredRecipes();
@@ -57,6 +47,7 @@ recipesService.subscribe(() => {
 
 function render() {
   const recipes = recipesService.getAllRecipes();
+
   document.querySelector("#app").innerHTML = `
     <header class="site-header">
       <div class="container">
@@ -94,4 +85,13 @@ function render() {
       </div>
     </footer>
   `;
+
+  const favoritesButton = document.querySelector("#favoritesButton");
+  favoritesButton.addEventListener("click", () => {
+    const favoritesOnlyEvent = new CustomEvent(EVENT_RECIPE_FILTER_FAVORITE_ONLY, {
+      bubbles: true,
+      composed: true
+    });
+    document.dispatchEvent(favoritesOnlyEvent);
+  });
 }
