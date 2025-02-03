@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "title": "Butter Chicken",
+        "description": "Creamy and rich Indian curry with tender chicken pieces in a tomato-based sauce",
+        "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "prepTime": "45 minutes",
+        "spicyLevel": 3,
+        "ingredients": [
+            "800g chicken thighs",
+            "2 cups tomato puree",
+            "1 cup heavy cream",
+            "2 tbsp butter",
+            "Garam masala",
+            "Kashmiri red chili powder",
+            "Ginger-garlic paste",
+            "Kasoori methi"
+        ],
+        "instructions": [
+            "Marinate chicken with yogurt and spices",
+            "Cook chicken until tender",
+            "Prepare tomato-based gravy",
+            "Add cream and butter",
+            "Simmer until thick"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Palak Paneer",
+        "description": "Classic vegetarian dish made with fresh spinach and cottage cheese",
+        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "prepTime": "40 minutes",
+        "spicyLevel": 2,
+        "ingredients": [
+            "500g spinach",
+            "200g paneer",
+            "Onions",
+            "Tomatoes",
+            "Ginger",
+            "Garlic",
+            "Cumin seeds",
+            "Garam masala"
+        ],
+        "instructions": [
+            "Blanch and puree spinach",
+            "Saute spices and onions",
+            "Add tomatoes and cook",
+            "Mix in spinach puree",
+            "Add paneer cubes and simmer"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Dal Makhani",
+        "description": "Creamy black lentils slow-cooked with spices and butter",
+        "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "prepTime": "60 minutes",
+        "spicyLevel": 1,
+        "ingredients": [
+            "Black lentils",
+            "Red kidney beans",
+            "Butter",
+            "Heavy cream",
+            "Tomato puree",
+            "Ginger-garlic paste",
+            "Garam masala",
+            "Kasuri methi"
+        ],
+        "instructions": [
+            "Soak lentils overnight",
+            "Pressure cook lentils and beans",
+            "Prepare tomato-based gravy",
+            "Simmer with cream and butter",
+            "Garnish with cream and coriander"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Biryani",
+        "description": "Aromatic rice dish layered with spiced meat and herbs",
+        "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "prepTime": "90 minutes",
+        "spicyLevel": 2,
+        "ingredients": [
+            "Basmati rice",
+            "Lamb or chicken",
+            "Yogurt",
+            "Saffron",
+            "Onions",
+            "Biryani masala",
+            "Mint leaves",
+            "Ghee"
+        ],
+        "instructions": [
+            "Marinate meat with spices",
+            "Cook rice partially",
+            "Layer rice and meat",
+            "Add saffron milk",
+            "Dum cook until done"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Malai Kofta",
+        "description": "Soft potato and paneer dumplings in rich creamy gravy",
+        "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "prepTime": "50 minutes",
+        "spicyLevel": 5,
+        "ingredients": [
+            "Paneer",
+            "Potatoes",
+            "Cashew paste",
+            "Heavy cream",
+            "Tomatoes",
+            "Green cardamom",
+            "Kasuri methi",
+            "Garam masala"
+        ],
+        "instructions": [
+            "Prepare kofta mixture",
+            "Shape and fry koftas",
+            "Make creamy gravy",
+            "Add koftas before serving",
+            "Garnish with cream"
+        ]
+    }
+]
