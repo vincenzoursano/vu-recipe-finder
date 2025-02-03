@@ -39,11 +39,12 @@ p {
   position: absolute;
   top: var(--spacing-sm);
   right: var(--spacing-sm);
-  background: var(--color-turmeric);
   border-radius: var(--radius-md);
   cursor: pointer;
   font-size: var(--text-md);
   padding: var(--spacing-sm);
   box-shadow: var(--shadow-sm);
+  background: var(--color-turmeric);
+  border: 2px groove var(--color-turmeric);
 }
 

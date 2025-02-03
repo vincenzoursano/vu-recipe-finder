@@ -81,7 +81,7 @@ function render() {
 
     <footer class="site-footer">
       <div class="container rainbow-filter">
-        <p>˖𓍢ִ🌷͙֒˖𓍢ִ໋🌷͙˖𓍢ִ໋🌷͙֒˖𓍢ִ໋🌷͙</p>
+        <p>🌷🌿🌷🌿🌷🌿🌷🌿🌷🌿🌷🌿🌷🌿🌷🌿🌷</p>
       </div>
     </footer>
   `;

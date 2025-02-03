@@ -1,5 +1,5 @@
 :host {
-  --input-max-width: 300px;
+  --input-width: clamp(200px, 60vw, 300px);
   --input-border-size: 2px;
 }
 
@@ -12,13 +12,12 @@ label {
 }
 
 input {
-  width: 100%;
+  width: var(--input-width);
   padding: var(--spacing-sm);
   border: var(--input-border-size) solid var(--color-border);
   border-radius: var(--border-radius);
   font-size: var(--text-sm);
   background-color: var(--color-rice);
-  max-width: var(--input-max-width);
 }
 
 input:hover {

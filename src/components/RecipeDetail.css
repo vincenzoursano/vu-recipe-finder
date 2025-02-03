@@ -20,13 +20,14 @@
 .close-btn {
   position: fixed;
   cursor: pointer;
-  background-color: var(--color-rice);
   border-radius: var(--radius-sm);
   top: var(--spacing-md);
   right: var(--spacing-md);
   font-size: var(--text-xl);
-  color: var(--color-black-pepper);
   padding: var(--spacing-sm);
+  background-color: var(--color-rice);
+  color: var(--color-black-pepper);
+  border: 2px groove var(--color-tandoor);
 }
 
 .header {

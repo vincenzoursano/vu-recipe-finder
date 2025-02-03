@@ -113,6 +113,7 @@ body {
   color: var(--color-rice);
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-md);
+  border: 2px groove var(--color-rice);
   font-size: var(--text-md);
   cursor: pointer;
   margin-left: auto;
@@ -120,6 +121,7 @@ body {
 
 .menu-header-favorite-btn.active {
   background-color: var(--color-mint);
+  border: 2px groove var(--color-mint);
 }
 
 .menu-grid {
